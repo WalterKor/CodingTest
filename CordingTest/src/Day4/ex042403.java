@@ -21,7 +21,20 @@ public class ex042403 {
 		int H;
 		int M;
 		Scanner sc = new Scanner(System.in);
+		System.out.print("상근이가 맞춰놓은 시간을 입력해라 H : M ");
 		
+
+		do {
+			H = sc.nextInt();
+			M = sc.nextInt();
+			if((0<=H && H<=24)&&(0<=M && M<=60)) {
+				
+				
+				return;
+			}else {
+				System.out.println("잘못입력했습니다. 다시 입력해주세요");
+			}
+		}while(true);
 		
 	}
 }
